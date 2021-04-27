@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+	<title>jQuery_projet_01_exercice_08</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container row justify-content-center">
+		<h1 class="col-12 p-4 m-2 text-center">Exercice_08 : Donner à tous les éléments "li" enfants de "ol" la couleur rouge.</h1>
+		<div class="col-12 text-center" id="texte">
+			<ul>
+				<li>Html</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+				<li>PHP</li>
+				<li>...</li>
+			</ul>
+			<ol>
+				<li>JQuery</li>
+				<li>Angular JS</li>
+				<li>Node JS</li>
+				<li>BootStrap</li>
+				<li>Symfony</li>
+				<li>Laravel</li>
+			</ol>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js">
+	</script>
+	<script>
+	   $(document).ready(function(){
+	   //Les méthodes children() et find() permettent d’accéder aux enfants d’un élément ou d’une collection d’éléments HTML sélectionnés en jQuery, ici "ol".
+	   //Avec la méthode children(), on peut passer un sélecteur en argument, ici "ol", la méthode servant de filtre à la sélection de ses enfants,
+     //les "li" descendants, dans l'arborescence et correspondants aux enfants de "ol".
+	   //ici on applique une nouvelle couleur, rouge, aux éléments "li" enfants de "ol"
+	    $("ol").children().css("color", "red");
+	   });
+	</script>
+</body>
+</html>
