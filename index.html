@@ -36,6 +36,9 @@
      //les "li" descendants, dans l'arborescence et correspondants aux enfants de "ol".
 	   //ici on applique une nouvelle couleur, rouge, aux éléments "li" enfants de "ol"
 	    $("ol").children().css("color", "red");
+			// ci dessous une méthode plus simple
+			// $("ol li").css("color", "red");
+			// $("ol > li").css("color", "red"); ciblera les enfants directs si il existait une ul avec des li dans l'ol ils n'auraient pas été ciblés 
 	   });
 	</script>
 </body>
